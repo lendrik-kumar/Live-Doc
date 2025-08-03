@@ -3,10 +3,10 @@ import { useState } from 'react'
 import { v4 as uuid } from 'uuid'
 import toast from 'react-hot-toast'
 import { useNavigate } from 'react-router'
+import useDataStore from '../utils/store'
 
 const Home = () => {
-    const [roomId, setRoomId] = useState('')
-    const [username, setUsername] = useState('')
+    const {roomId, setRoomId, username, setUsername} = useDataStore()
     const navigate = useNavigate()
 
     const handleCreateRoom = (r) => {
@@ -22,11 +22,7 @@ const Home = () => {
             toast.error('Please enter both Room ID and Username')
             return
         }
-        navigate(`/editor/${roomId}`, {
-            state: {
-                username: username ,
-            }
-        })
+        navigate(`/editor/${roomId}`)
     }
 
     const handleKeyDown = (e) => {

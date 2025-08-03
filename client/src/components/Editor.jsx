@@ -1,8 +1,11 @@
-import React from 'react'
+import { Tldraw } from 'tldraw'
+import 'tldraw/tldraw.css'
 
-const Editor = () => {
+const Editor = ({roomId}) => {
   return (
-    <div>Editor</div>
+    <div style={{ position: 'relative', height: '100vh' }} >
+      <Tldraw persistenceKey={roomId} />
+    </div>
   )
 }
 
