@@ -2,8 +2,7 @@ import { io } from "socket.io-client";
 import env from "dotenv"
 
 
-const BASE_URL = import.meta.env.VITE_NODE_URL || "http://localhost:8001"
-
+const BASE_URL = import.meta.env.VITE_NODE_URL 
 
 
 export const initSocket = async () => {
