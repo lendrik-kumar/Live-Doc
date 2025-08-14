@@ -12,5 +12,5 @@ export const initSocket = async () => {
         transports: ['websocket'],
     }
 
-    return io("https://z6pxcm63-8000.inc1.devtunnels.ms/", options);
+    return io("https://live-doc-ogjr.vercel.app/", options);
 }
