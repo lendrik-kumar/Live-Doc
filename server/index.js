@@ -13,6 +13,8 @@ const io = new Server(server, {
     }
 });
 
+const PORT = process.env.PORT || 8001
+
 app.use(cors());
 
 const userSocketMap = {}
@@ -59,6 +61,6 @@ io.on('disconnect', (socket) => {
     console.log('A user disconnected:', socket.id);
 });
 
-server.listen(8001, () => {
+server.listen(PORT, () => {
     console.log('Server is running on port 8001');
 })
