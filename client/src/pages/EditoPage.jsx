@@ -87,10 +87,8 @@ const EditoPage = () => {
   
     return (
         <div className="flex h-screen">
-            {/* sidebar */}
             <div className="w-64 bg-white h-full shadow-lg rounded-r-3xl">
                 <div className="flex flex-col h-full p-6">
-                    {/* Updated Logo and Title */}
                     <div className="flex items-center gap-3 mb-8">
                         <DocumentTextIcon className="w-8 h-8 text-gray-900" />
                         <h1 className="text-2xl font-extrabold text-gray-800 tracking-tight">
