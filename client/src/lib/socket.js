@@ -12,5 +12,5 @@ export const initSocket = async () => {
         transports: ['websocket'],
     }
 
-    return io(BASE_URL, options);
+    return io("https://z6pxcm63-8000.inc1.devtunnels.ms/", options);
 }
