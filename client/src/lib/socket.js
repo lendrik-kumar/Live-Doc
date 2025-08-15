@@ -1,9 +1,6 @@
 import { io } from "socket.io-client";
-import env from "dotenv"
-
 
 const BASE_URL = import.meta.env.VITE_NODE_URL 
-
 
 export const initSocket = async () => {
         const options = {
@@ -12,5 +9,5 @@ export const initSocket = async () => {
         transports: ['websocket'],
     }
 
-    return io("https://z6pxcm63-8000.inc1.devtunnels.ms/", options)
+    return io("https://server-production-e5c5.up.railway.app", options)
 }
