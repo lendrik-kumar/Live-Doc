@@ -85,7 +85,7 @@ const Home = () => {
           <div className='text-gray-500 text-sm'>
             source code on&nbsp;
             <a 
-              href="https://github.com/lendrik-kumar/Live-Doc" 
+              href="https://live-doc-kappa.vercel.app/" 
               className='text-gray-800 hover:underline'
               target="_blank"
               rel="noopener noreferrer"
